@@ -1,0 +1,31 @@
+POST  http://localhost:4000/auth/login
+Content-Type: application/json
+
+{
+  "username":"art123",
+  "password":"art123"
+}
+
+
+### REGISTER
+POST  http://localhost:4000/auth/register
+Content-Type: application/json
+
+{
+  "username":"art123",
+  "password":"art123",
+  "email":"art123@gmail.com",
+  "name":"art123",
+  "surname":"art123"
+}
+
+### Get Me
+GET  http://localhost:4000/users/me
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MjI4ODAyNjUsImV4cCI6MTYyMjg4MDMyNSwiYXVkIjoiNjBiYTVkZTRlOWMyNmYyN2M0ZWFjMjMwIn0.xFcoh0SnanKEQhnK18_-fFsUzXfng_ARAUvLmpR0GsY
+
+
+
+###REfresh token
+POST  http://localhost:4000/auth/refresh-token
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MjI4ODAyNTYsImV4cCI6MTYyMjg4MDMxNiwiYXVkIjoiNjBiYTVkZTRlOWMyNmYyN2M0ZWFjMjMwIn0.94Vvi-HfZtXCBzEw4VJWgGEsAmvg_aTCaTyInkEe5xg
